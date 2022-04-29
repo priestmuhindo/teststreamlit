@@ -62,7 +62,14 @@ def main():
             st.sidebar.success("Vous avez réussi à créer un compte ")
             st.sidebar.info("Veuillez vous connectez afin de parcourir les ménus que nous vous proposons")
 
-    
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)    
 
 
 
