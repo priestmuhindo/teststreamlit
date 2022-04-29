@@ -1,0 +1,6 @@
+library(tidyverse)
+library(readxl)
+df=read_excel("Inputs/eleve.xlsx")
+print(df)
+print(iris)
+print(iris %>% group_by(Species) %>% summarise(moyenne=mean(Sepal.Length)))
